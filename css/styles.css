@@ -1,18 +1,61 @@
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
+  background-color: #0c0e20; /* Fondo oscuro estilo Disney+ */
+  color: #fff; /* Texto blanco */
 }
 
 .genero-container {
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #f8f8f8;
+  border: 1px solid #1e3a8a; /* Azul brillante */
+  background-color: #101537; /* Fondo con toque azulado */
+  border-radius: 10px;
 }
 
 h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #4cc9f0; /* Azul celeste llamativo */
+  text-shadow: 0 0 8px #4cc9f0; /* Efecto de brillo sutil */
 }
 
+.genero {
+  display: flex;
+  overflow: auto;
+  gap: 20px;
+}
 
+/* Personalizar la barra de desplazamiento del género */
+.genero::-webkit-scrollbar {
+  height: 12px; /* Alto de la barra horizontal */
+}
+
+.genero::-webkit-scrollbar-track {
+  background: #1a1f3b; /* Fondo oscuro azulado */
+  border-radius: 10px;
+}
+
+.genero::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6); /* Azul degradado */
+  border-radius: 10px;
+}
+
+.genero::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #2563eb, #60a5fa); /* Más brillante al pasar */
+}
+
+.card {
+  width: 200px;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #3b82f6;
+}
